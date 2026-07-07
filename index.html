@@ -235,12 +235,29 @@
   <div class="fine">Bride's Family &amp; Groom's Family · Made with love</div>
 </footer>
 
-<script>
+<!-- <script>
   const els = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   }, {threshold:.05});
   els.forEach(el=>io.observe(el));
+</script> -->
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { 
+      if (e.isIntersecting) { 
+        // When scrolling into view, add the class to fade it in
+        e.target.classList.add('in'); 
+      } else {
+        // When scrolling out of view, remove the class so it can fade in again later
+        e.target.classList.remove('in'); 
+      }
+    });
+  }, { threshold: 0.05 }); // Kept low for mobile responsiveness!
+
+  els.forEach(el => io.observe(el));
 </script>
 </body>
 </html>
