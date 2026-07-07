@@ -244,13 +244,25 @@ align-items:stretch;
 @media (max-width:560px){
 .event-cards{grid-template-columns:1fr; gap:18px;}
 }
-.event-card{
+/* .event-card{
 background:var(--ivory);
 border:1px solid var(--gold);
 border-radius:14px;
 padding:32px 24px;
 text-align:center;
 position:relative;
+} */
+
+.event-card{
+  background:var(--ivory);
+  border:1px solid var(--gold);
+  border-radius:14px;
+  padding:32px 24px;
+  text-align:center;
+  position:relative;
+
+  display:flex;
+  flex-direction:column;
 }
 .event-card::before{
 content:"";
@@ -267,8 +279,20 @@ color:var(--marigold-deep);
 font-size:1.7rem;
 margin-bottom:10px;
 }
-.event-card .event-meta{
+/* .event-card .event-meta{
 font-size:.95rem;
+} */
+
+.event-card .event-meta{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  font-size:.95rem;
+}
+
+.event-card .event-meta span{
+  display:block;
+  margin-bottom:8px;
 }
 .event-card .event-meta span{margin-bottom:4px;}
 .event-divider{
@@ -278,7 +302,7 @@ color:var(--marigold);
 font-size:1.6rem;
 }
 
-.event-card .map-btn{
+/* .event-card .map-btn{
   display:inline-flex;
   align-items:center;
   gap:6px;
@@ -294,6 +318,30 @@ font-size:1.6rem;
   text-decoration:none;
   border:1px solid var(--maroon);
   transition:background .2s ease, color .2s ease;
+} */
+
+.event-card .map-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+
+  margin-top:20px;      /* pushes button to bottom */
+  align-self:center;    /* center button */
+
+  padding:8px 16px;
+  border-radius:20px;
+  background:var(--maroon);
+  color:var(--ivory);
+  font-family:'Mukta',sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  letter-spacing:.02em;
+  text-decoration:none;
+  border:1px solid var(--maroon);
+  transition:background .2s ease, color .2s ease;
+
+  white-space:nowrap;   /* keep "Get Directions" on one line */
 }
 .event-card .map-btn:hover{
   background:var(--marigold-deep);
