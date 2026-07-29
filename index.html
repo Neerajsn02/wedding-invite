@@ -77,8 +77,25 @@
   </svg>
 </div>
 
-<!-- ===== WELCOME ===== -->
+<!-- ===== WELCOME SECTION WITH DECORATIONS ===== -->
 <section class="section welcome reveal">
+  
+  <!-- Left & Right Hanging Lamp Background Decorations -->
+  <svg class="hanging-lamp left" viewBox="0 0 40 180" aria-hidden="true">
+    <line x1="20" y1="0" x2="20" y2="120" stroke="#C9A24B" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="20" cy="120" r="3" fill="#5B2A6E"/>
+    <path d="M8,135 Q20,165 32,135 Q20,140 8,135 Z" fill="#C9A24B"/>
+    <path d="M20,123 C15,130 17,133 20,135 C23,133 25,130 20,123 Z" fill="#5B2A6E"/>
+  </svg>
+
+  <svg class="hanging-lamp right" viewBox="0 0 40 180" aria-hidden="true">
+    <line x1="20" y1="0" x2="20" y2="120" stroke="#C9A24B" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <circle cx="20" cy="120" r="3" fill="#5B2A6E"/>
+    <path d="M8,135 Q20,165 32,135 Q20,140 8,135 Z" fill="#C9A24B"/>
+    <path d="M20,123 C15,130 17,133 20,135 C23,133 25,130 20,123 Z" fill="#5B2A6E"/>
+  </svg>
+
+  <!-- Portrait Frame -->
   <div class="portrait-frame">
     <div class="ring">
       <div class="ring-inner">
@@ -91,14 +108,42 @@
     <svg class="corner br" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8V2h6"/><path d="M2 2q10 0 10 10"/></svg>
   </div>
 
-  <div class="eyebrow">Our Story</div>
-  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0;">A Blessed Beginning</h2>
-  <p>
-    With hearts full of gratitude and joy, we invite you to celebrate the union of two souls
-    and two families. Your presence, blessings, and laughter will make our celebration complete.
-  </p>
-   <div class="families parents">Son of Mrs. Bindu Nair &amp; Dr. Dinesh Babu</div>
-   <div class="families parents">Daughter of Mrs. Sreedevi Binu &amp; Mr. Binu Narayana Kurup</div>
+  <!-- Decorated Content Card -->
+  <div class="welcome-card">
+    <div class="welcome-mandala-bg" aria-hidden="true"></div>
+    
+    <!-- Decorative Corner Accents -->
+    <svg class="welcome-corner tl" viewBox="0 0 30 30" fill="none" stroke="#C9A24B"><path d="M2,18 V2 H18 M2,2 L14,14"/></svg>
+    <svg class="welcome-corner tr" viewBox="0 0 30 30" fill="none" stroke="#C9A24B"><path d="M28,18 V2 H12 M28,2 L16,14"/></svg>
+    <svg class="welcome-corner bl" viewBox="0 0 30 30" fill="none" stroke="#C9A24B"><path d="M2,12 V28 H18 M2,28 L14,16"/></svg>
+    <svg class="welcome-corner br" viewBox="0 0 30 30" fill="none" stroke="#C9A24B"><path d="M28,12 V28 H12 M28,28 L16,16"/></svg>
+
+    <div class="eyebrow">Our Story</div>
+    <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0;">A Blessed Beginning</h2>
+    
+    <div class="welcome-divider">
+      <svg viewBox="0 0 100 20" class="ornament-svg">
+        <path d="M0,10 Q25,0 50,10 Q75,20 100,10" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+        <circle cx="50" cy="10" r="3" fill="var(--maroon)"/>
+      </svg>
+    </div>
+
+    <p>
+      With hearts full of gratitude and joy, we invite you to celebrate the union of two souls
+      and two families. Your presence, blessings, and laughter will make our celebration complete.
+    </p>
+
+    <div class="family-badges">
+      <div class="family-card">
+        <span class="relation">Groom's Parents</span>
+        <div class="names">Mrs. Bindu Nair &amp; Dr. Dinesh Babu</div>
+      </div>
+      <div class="family-card">
+        <span class="relation">Bride's Parents</span>
+        <div class="names">Mrs. Sreedevi Binu &amp; Mr. Binu Narayana Kurup</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Garland bottom of welcome section -->
