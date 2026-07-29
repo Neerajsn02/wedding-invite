@@ -543,6 +543,66 @@ text-align:center; font-size:.85rem; opacity:.85; margin-top:30px;
 font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.05rem;
 }
 
+/* single contact card, centered */
+.contact-grid.single{
+  grid-template-columns:1fr;
+  max-width:400px;
+}
+
+/* ================= WISHES BLOCK ================= */
+.wishes-block{
+  max-width:560px;
+  margin:44px auto 0;
+  text-align:center;
+}
+.wishes-rule{
+  width:60px; height:1px;
+  background:rgba(240,220,166,.5);
+  margin:0 auto 26px;
+}
+.wishes-title{
+  font-family:'Yatra One',cursive;
+  color:var(--marigold);
+  font-size:1.15rem;
+  letter-spacing:.03em;
+  margin-bottom:6px;
+}
+.wishes-sub{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:1.05rem;
+  color:var(--gold-light);
+  opacity:.9;
+  margin-bottom:20px;
+}
+.wishes-names{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+}
+.wishes-names span{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:1.15rem;
+  color:var(--ivory);
+  padding:0 14px;
+  position:relative;
+}
+.wishes-names span:not(:last-child)::after{
+  content:"❋";
+  position:absolute;
+  right:-4px;
+  color:var(--marigold);
+  font-size:.7rem;
+  opacity:.7;
+  font-style:normal;
+}
+@media (max-width:480px){
+  .wishes-names span{padding:4px 10px;}
+}
+
 
 
 /* ================= FOOTER / DIYA ================= */
