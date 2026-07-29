@@ -13,16 +13,16 @@
 <!-- ===== TORAN (top garland) ===== -->
 <div class="toran" aria-hidden="true">
   <svg viewBox="0 0 800 90" preserveAspectRatio="none">
-    <path d="M0,10 Q100,70 200,10 T400,10 T600,10 T800,10" fill="none" stroke="#5B2A6E" stroke-width="3"/>
+    <path d="M0,10 Q100,70 200,10 T400,10 T600,10 T800,10" fill="none" stroke="#0F5257" stroke-width="3"/>
     <g>
       <!-- repeated marigold + leaf units -->
       <g id="unit">
-        <path class="marigold" d="M40,10 q0,20 -14,20 q14,0 14,20 q0,-20 14,-20 q-14,0 -14,-20" fill="#C9A24B"/>
-        <circle class="marigold" cx="40" cy="30" r="7" fill="#5B2A6E"/>
+        <path class="marigold" d="M40,10 q0,20 -14,20 q14,0 14,20 q0,-20 14,-20 q-14,0 -14,-20" fill="#E8871E"/>
+        <circle class="marigold" cx="40" cy="30" r="7" fill="#C96A10"/>
       </g>
     </g>
     <!-- instances across width -->
-    <g fill="#C9A24B">
+    <g fill="#E8871E">
       <use href="#unit" x="0"/>
       <use href="#unit" x="80"/>
       <use href="#unit" x="160"/>
@@ -35,7 +35,7 @@
       <use href="#unit" x="720"/>
     </g>
     <!-- mango leaves between -->
-    <g fill="#5B2A6E">
+    <g fill="#0F5257">
       <path d="M80,14 q10,10 0,26 q-10,-16 0,-26" />
       <path d="M240,14 q10,10 0,26 q-10,-16 0,-26" />
       <path d="M400,14 q10,10 0,26 q-10,-16 0,-26" />
@@ -79,9 +79,10 @@
 
 <!-- ===== WELCOME ===== -->
 <section class="section welcome reveal">
-  <div class="portrait-frame">
+      <div class="portrait-frame">
     <div class="ring">
       <div class="ring-inner">
+        <!-- Replace the div below with: <img class="photo" src="your-photo.jpg" alt="The couple"> -->
         <img class="photo" src="images/portrait.jpeg" alt="The couple" style="object-position: 50% 60%;">
       </div>
     </div>
@@ -92,20 +93,22 @@
   </div>
 
   <div class="eyebrow">Our Story</div>
-  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0;">A Blessed Beginning</h2>
+  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); color:var(--maroon); margin:8px 0 0;">A Blessed Beginning</h2>
   <p>
     With hearts full of gratitude and joy, we invite you to celebrate the union of two souls
     and two families. Your presence, blessings, and laughter will make our celebration complete.
+    
   </p>
-   <div class="families parents">Son of Mrs. Bindu Nair &amp; Dr. Dinesh Babu</div>
+  <!-- <div class="families">Son of Mrs. Bindu Nair &amp;  Dr. Dinesh Babu &nbsp;·&nbsp; Daughter of Mrs. Sreedevi Binu &amp; Mr. Binu Narayana Kurup</div> -->
+   <div class="families parents">Son of Mrs. Bindu Nair &amp;  Dr. Dinesh Babu</div>
    <div class="families parents">Daughter of Mrs. Sreedevi Binu &amp; Mr. Binu Narayana Kurup</div>
+
 </section>
 
-<!-- Garland bottom of welcome section -->
 <div class="toran" aria-hidden="true">
   <svg viewBox="0 0 800 60" preserveAspectRatio="none">
-    <path d="M0,54 Q100,16 200,54 T400,54 T600,54 T800,54" fill="none" stroke="#5B2A6E" stroke-width="2"/>
-    <g fill="#C9A24B">
+    <path d="M0,54 Q100,16 200,54 T400,54 T600,54 T800,54" fill="none" stroke="#0F5257" stroke-width="2"/>
+    <g fill="#E8871E">
       <circle cx="40" cy="34" r="5"/><circle cx="160" cy="34" r="5"/><circle cx="280" cy="34" r="5"/>
       <circle cx="400" cy="34" r="5"/><circle cx="520" cy="34" r="5"/><circle cx="640" cy="34" r="5"/><circle cx="760" cy="34" r="5"/>
     </g>
@@ -115,7 +118,7 @@
 <!-- ===== EVENTS ===== -->
 <section class="section timeline-wrap reveal" style="padding-top:70px; max-width:none;">
   <div class="eyebrow">You're Invited To</div>
-  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0;">The Celebration</h2>
+  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); color:var(--maroon); margin:8px 0 0;">The Celebration</h2>
  
   <div class="event-cards">
     <div class="event-card">
@@ -144,11 +147,23 @@
     </div>
   </div>
 </section>
+ 
+<div class="toran" aria-hidden="true">
+  <svg viewBox="0 0 800 60" preserveAspectRatio="none">
+    <path d="M0,6 Q100,44 200,6 T400,6 T600,6 T800,6" fill="none" stroke="#C9A24B" stroke-width="2"/>
+    <g fill="#5B2A6E">
+      <circle cx="40" cy="24" r="5"/><circle cx="160" cy="24" r="5"/><circle cx="280" cy="24" r="5"/>
+      <circle cx="400" cy="24" r="5"/><circle cx="520" cy="24" r="5"/><circle cx="640" cy="24" r="5"/><circle cx="760" cy="24" r="5"/>
+    </g>
+  </svg>
+</div>
+
+
 
 <!-- ===== GALLERY ===== -->
 <section class="section gallery reveal">
   <div class="eyebrow">In Pictures</div>
-  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0;">Moments We Cherish</h2>
+  <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); color:var(--maroon); margin:8px 0 0;">Moments We Cherish</h2>
   <div class="gallery-grid">
     <img class="gallery-photo big" src="images/pic_1.jpeg" alt="">
     <img class="gallery-photo tall" src="images/pic_2.jpeg" alt="">
@@ -157,15 +172,17 @@
   </div>
 </section>
 
+
+
 <!-- ===== CONTACT ===== -->
 <section class="contact-wrap reveal">
   <div style="text-align:center;">
-    <div class="eyebrow" style="color: #F0DCA6; text-shadow: 0 1px 3px rgba(0,0,0,0.4); font-weight: 500;">For Any Queries</div>
-    <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0; color: #FFFFFF; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Reach the Families</h2>
+    <div class="eyebrow">For Any Queries</div>
+    <h2 class="display" style="font-size:clamp(1.8rem,4vw,2.4rem); margin:8px 0 0;">Reach the Families</h2>
   </div>
-
-  <div class="contact-grid single">
+  <!-- <div class="contact-grid">
     <div class="contact-card">
+      <div class="side-label">Groom's Side</div>
       <div class="side-names">Mrs. Bindu Nair and Dr. Dinesh Babu</div>
       <div class="contact-line">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
@@ -175,53 +192,106 @@
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
         <span>+91 94474 56707</span>
       </div>
+      
+      
       <div class="contact-line">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>DD Majestic Mount, Natassery, Kottayam</span>
+        <span>House No., Street Name,<br>Locality, City, State – PIN</span>
       </div>
     </div>
-  </div>
+ 
+    <div class="contact-card">
+      <div class="side-label">Bride's Side</div>
+      <div class="side-names">Mrs. Sreedevi binu and Mr. Binu Narayana Kurup</div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+91 00000 00002 </span>
+      </div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+91 00000 00003</span>
+      </div>
+      
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>House No., Street Name,<br>Locality, City, State – PIN</span>
+      </div>
+    </div>
+  </div> -->
 
-  <div class="wishes-block">
-    <div class="wishes-rule"></div>
-    <div class="wishes-title">With Best Wishes</div>
-    <div class="wishes-sub">This invitation comes with love from</div>
-    <div class="wishes-names">
-      <span>Nishanth Suresh</span>
-      <span>Rahul Panicker</span>
-      <span>Gautami Nair</span>
-      <span>Neeraj Suresh</span>
-      <span>Varun Panicker</span>
-      <span>Anirudh Panicker</span>
+  <div class="contact-grid single">
+  <div class="contact-card">
+    <!-- <div class="side-label">Groom's Side</div> -->
+    <div class="side-names">Mrs. Bindu Nair and Dr. Dinesh Babu</div>
+    <div class="contact-line">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+91 94965 40198 </span>
+    </div>
+    <div class="contact-line">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+      <span>+91 94474 56707</span>
+    </div>
+    <div class="contact-line">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>DD Majestic Mount, Natassery, Kottayam</span>
     </div>
   </div>
+</div>
+
+<div class="wishes-block">
+  <div class="wishes-rule"></div>
+  <div class="wishes-title">With Best Wishes</div>
+  <div class="wishes-sub">This invitation comes with love from</div>
+  <div class="wishes-names">
+    <span>Nishanth Suresh</span>
+    <span>Rahul Panicker</span>
+    <span>Gautami Nair</span>
+    <span>Neeraj Suresh</span>
+    <span>Varun Panicker</span>
+    <span>Anirudh Panicker</span>
+    <!-- <span>Name Seven</span>
+    <span>Name Eight</span> -->
+  </div>
+</div>
   <div class="contact-note">We look forward to celebrating with you.</div>
 </section>
+
 
 <!-- ===== FOOTER ===== -->
 <footer>
   <svg class="diya" viewBox="0 0 100 70" fill="none">
     <g class="flame">
-      <path d="M50,8 C40,24 42,34 50,38 C58,34 60,24 50,8Z" fill="#C9A24B"/>
+      <path d="M50,8 C40,24 42,34 50,38 C58,34 60,24 50,8Z" fill="#E8871E"/>
       <path d="M50,16 C46,26 47,32 50,34 C53,32 54,26 50,16Z" fill="#F0DCA6"/>
     </g>
     <path d="M15,42 Q50,68 85,42 Q80,54 50,58 Q20,54 15,42Z" fill="#C9A24B"/>
     <ellipse cx="50" cy="42" rx="35" ry="7" fill="#5B2A6E"/>
   </svg>
   <p>Blessings mean the world to us.</p>
+  <!-- <div class="fine">Bride's Family &amp; Groom's Family · Made with love</div> -->
 </footer>
+
+<!-- <script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.05});
+  els.forEach(el=>io.observe(el));
+</script> -->
 
 <script>
   const els = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { 
       if (e.isIntersecting) { 
+        // When scrolling into view, add the class to fade it in
         e.target.classList.add('in'); 
       } else {
+        // When scrolling out of view, remove the class so it can fade in again later
         e.target.classList.remove('in'); 
       }
     });
-  }, { threshold: 0.05 });
+  }, { threshold: 0.05 }); // Kept low for mobile responsiveness!
 
   els.forEach(el => io.observe(el));
 </script>
